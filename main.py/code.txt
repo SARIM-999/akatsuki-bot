@@ -1,0 +1,14 @@
+import discord
+from discord.ext import commands
+
+bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
+
+@bot.event
+async def on_ready():
+    print("Akatsuki Bot is online! 地爆天星!")  # Pain’s move
+
+@bot.command()
+async def itachi(ctx):
+    await ctx.send("*You lack hatred...* - Itachi")
+
+bot.run("PASTE_YOUR_BOT_TOKEN_HERE")  # Replace with token from STEP 1
